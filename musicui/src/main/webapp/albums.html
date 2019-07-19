@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>专辑</title>
+<style>
+body{
+	min-width: 800px;
+}
+/*首页的头部开始*/
+.music-head{
+	height: 70px;
+	text-align: center;
+	border-bottom: 1px solid gainsboro;
+}
+#pic{
+	float: left;
+	width: 150px;
+	margin-top: 20px;
+	margin-left: 10%;
+}
+.list_ul{
+	display: inline-block;
+}
+.list_ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.list_ul li{
+	width: 120px;
+	height: 70px;
+	display: table-cell;
+	text-align: center;
+	list-style: none;
+	vertical-align: middle;
+	
+}
+.list_ul li a{
+	text-decoration: none;
+}
+.list_ul li:hover{
+	background: lightblue;
+}
+/*首页的头部结束*/
+</style>
+<link rel="stylesheet" type="text/css" href="css/singers.css"/>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body >
+<!--首页头部开始-->
+		<div class="music-head">
+			
+			<ul class="list_ul" style="font-size: 20px;">
+				<div id="pic">
+					<span class="glyphicon glyphicon-music" style="font-size: 25px;"></span>
+					<span style="font-size: 20px;">
+						<b>豆腐音乐</b>
+					</span>
+				</div>
+				<li><a href="index1.html"><b>首页</b></a></li>
+				<li><a href="paihang.html"><b>排行</b></a></li>
+				<li><a href="albums.html"><b>专辑</b></a></li>
+				<li><a href="singers.html"><b>歌手</b></a></li>
+				<li><a href="usermanager.html"><b>个人中心</b></a></li>
+				<li><a href="login.html"><b>登录</b></a></li>
+				<li style="width: 200px;">
+					<div class="input-group input-group-sm">
+					  <input type="text" class="form-control" placeholder="搜索音乐" style="width: 120px;" aria-describedby="sizing-addon3">
+					  <button type="button" class="btn btn-default btn-xs" style="height: 30px;"><span class="glyphicon glyphicon-search"></span></button>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--首页头部结束-->
+          <div class="input-group input-group-sm" style="margin-left:1325px;">
+          <input id="serchvalue" type="text" class="form-control" placeholder="搜索专辑" style="width: 150px;" aria-describedby="sizing-addon3">
+			  <button id="serchbtn"type="button" class="btn btn-default btn-xs" style="height: 30px;"><span class="glyphicon glyphicon-search"></span></button>
+		  </div>
+         <div class="singers_nav" id="allsingers">
+
+		</div>
+		<div id="pagerutil" style="text-align: center;"></div>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/albums.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

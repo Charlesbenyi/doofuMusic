@@ -1,0 +1,28 @@
+/*歌手栏的布局*/
+
+.singers_nav{
+	width: 80%;
+	height: 700px;
+	/*background: black;*/
+	margin: 0 auto;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	align-content: space-around;
+	justify-content: space-around;
+}
+
+/*歌手栏的布局*/
+
+/*歌手框的设计的布局*/
+.show_singer{
+	display: flex;
+	flex-direction: column;
+	border-radius:10px;
+	align-items: center;
+}
+.show_singer{
+	cursor: pointer;
+}
+/*歌手框的设计的布局*/

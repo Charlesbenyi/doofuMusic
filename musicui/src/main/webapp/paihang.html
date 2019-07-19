@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.min.js?v=2.1.4" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/paihang.js" type="text/javascript" charset="utf-8"></script>
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+</head>
+<style>
+    *{margin: 0;padding: 0;list-style: none;}
+    .main{
+      width: 1400px;
+      margin: 0 auto;
+    }
+    .bangdan-left{
+        float: left;
+        width: 270px;
+        border: 1px solid antiquewhite;
+    }
+    .nav nav-pills{
+        width: 270px;
+    }
+    .active{
+        width: 88px;
+        font-size: 18px;
+    }
+    .active0{
+        width: 88px;
+        font-size: 18px;
+    }
+    .active1{
+        width: 88px;
+        font-size: 18px;
+    }
+    .bangdan-content{
+        width: 270px;
+    }
+    .bangdan-content-li{
+        width: 270px;
+        height: 70px;
+        list-style-type:none;
+    }
+    .bangdan-content-picture{
+        float: left;
+        margin-top: 5px;
+        width: 60px;
+        margin-left: 30px;
+        height: 60px;
+    }
+    .bangdan-content-word{
+        margin-left: 8px;
+        margin-top: 5px;
+        float: left;
+    }
+    .bangdan-content-name{
+        height: 20px;
+        line-height: 20px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        cursor: pointer;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-right: 5%;
+    }
+    .bangdan-content-time{
+        height: 20px;
+        line-height: 20px;
+        color: #999;
+    }
+    .bangdan-right{
+        width: 1080px;
+        float: left;
+        margin-left:50px;
+    }
+    .bangdan-right-top{
+        width: 1080px;
+        height: 70px;
+    }
+    .bangdan-right-title{
+        font-size: 35px;
+    }
+    .bangdan-right-time{
+        margin-left: 5px;
+        font-size: 15px;
+    }
+    .bangdan-right-function{
+        margin-top: 30px;
+        width: 1080px;
+        height: 50px;
+    }
+    .bangdan-right-button1{
+        width: 150px;
+        height:40px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        ackground: transparent; /*完全透明*/
+        opacity: 0.8; /*整个按钮的不透明度，会影响到文字，0完全透明，1完全不透明*/
+        background: rgba(255, 255, 255, 0.7);
+        background-color: silver;
+    }
+    .bangdan-right-button{
+        width: 120px;
+        height:40px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        ackground: transparent; /*完全透明*/
+        opacity: 0.8; /*整个按钮的不透明度，会影响到文字，0完全透明，1完全不透明*/
+        background: rgba(255, 255, 255, 0.7);
+        background-color: silver;
+        margin-left: 20px;
+    }
+    .bangdan-right-song{
+        margin-top: 20px;
+        width: 1080px;
+    }
+    .xuhao{
+        float: left;
+        width: 50px;
+    }
+    .song-img{
+        float: left;
+        margin-left: 50px;
+        width: 54px;
+        height: 54px;
+    }
+    /*首页的头部开始*/
+.music-head{
+	height: 70px;
+	text-align: center;
+	border-bottom: 1px solid gainsboro;
+}
+#pic{
+	float: left;
+	width: 150px;
+	margin-top: 20px;
+	margin-left: 10%;
+}
+.list_ul{
+	display: inline-block;
+}
+.list_ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.list_ul li{
+	width: 120px;
+	height: 70px;
+	display: table-cell;
+	text-align: center;
+	list-style: none;
+	vertical-align: middle;
+	
+}
+.list_ul li a{
+	text-decoration: none;
+}
+.list_ul li:hover{
+	background: lightblue;
+}
+/*首页的头部结束*/
+</style>
+<body>
+<div class="main">
+	<!--首页头部开始-->
+		<div class="music-head">
+			
+			<ul class="list_ul" style="font-size: 20px;">
+				<div id="pic">
+					<span class="glyphicon glyphicon-music" style="font-size: 25px;"></span>
+					<span style="font-size: 20px;">
+						<b>豆腐音乐</b>
+					</span>
+				</div>
+                <li><a href="index1.html"><b>首页</b></a></li>
+                <li><a href="paihang.html"><b>排行</b></a></li>
+                <li><a href="albums.html"><b>专辑</b></a></li>
+                <li><a href="singers.html"><b>歌手</b></a></li>
+                <li><a href="usermanager.html"><b>个人中心</b></a></li>
+                <li><a href="login.html"><b>登录</b></a></li>
+				<li style="width: 200px;">
+					<div class="input-group input-group-sm">
+					  <input type="text" class="form-control" placeholder="搜索音乐" style="width: 120px;" aria-describedby="sizing-addon3">
+					  <button type="button" class="btn btn-default btn-xs" style="height: 30px;"><span class="glyphicon glyphicon-search"></span></button>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--首页头部结束-->
+    <div class="bangdan-left">
+        <div class="bangdan-daohang">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">官方榜</a></li>
+                <li class="active0"><a href="#">特色榜</a></li>
+                <li class="active1"><a href="#">语言榜</a></li>
+            </ul>
+        </div>
+        <div class="bangdan-content">
+            <ul>
+                <li class="bangdan-content-li" >
+                        <img class="bangdan-content-picture" src="http://img3.kwcdn.kuwo.cn/star/upload/7/7/1561417240.png">
+                    <div class="bangdan-content-word">
+                        <a class="bangdan-content-name" href="#" onclick="redusong()">豆腐热度榜版</a>
+                        <p class="bangdan-content-time">今日更新</p>
+                    </div>
+                </li>
+                <li class="bangdan-content-li" >
+                    <img class="bangdan-content-picture" src="http://img3.kwcdn.kuwo.cn/star/upload/7/7/1561417240.png">
+                    <div class="bangdan-content-word">
+                        <a class="bangdan-content-name" href="#" onclick="newsongs()">豆腐新歌版</a>
+                        <p class="bangdan-content-time" >今日更新</p>
+                    </div>
+                </li>
+                <li class="bangdan-content-li" >
+                    <img class="bangdan-content-picture" src="http://img3.kwcdn.kuwo.cn/star/upload/7/7/1561417240.png">
+                    <div class="bangdan-content-word">
+                        <a class="bangdan-content-name" href="#" onclick="oldsong()">豆腐怀旧榜</a>
+                        <p class="bangdan-content-time">今日更新</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bangdan-right">
+      <div class="bangdan-right-top">
+          <span class="bangdan-right-title">豆腐新歌版</span>
+          <span class="bangdan-right-time">更新时间:2019-06-25</span>
+      </div>
+        <div class="bangdan-right-function">
+            <button  class="bangdan-right-button1" >
+                <i class="icon-music">
+                </i>
+                <span>全部播放</span>
+            </button>
+            <button  class="bangdan-right-button">
+                <i class="">
+                </i>
+                <span>添加</span>
+            </button>
+            <button  class="bangdan-right-button">
+                <i class="">
+                </i>
+                <span>收藏</span>
+            </button>
+            <button class="bangdan-right-button">评论</button>
+        </div>
+        <div class="bangdan-right-song">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>歌曲</th>
+                    <th>歌手</th>
+                    <th>时间</th>
+                    <th>播放</th>
+                </tr>
+                </thead>
+                <tbody id="paihang-content">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

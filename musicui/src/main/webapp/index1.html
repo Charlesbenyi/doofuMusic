@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>豆腐音乐首页</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index1.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	</head>
+	<body>
+		<!--首页头部开始-->
+		<div class="music-head">
+			
+			<ul class="list_ul" style="font-size: 20px;">
+				<div id="pic">
+					<span class="glyphicon glyphicon-music" style="font-size: 25px;"></span>
+					<span style="font-size: 20px;">
+						<b>豆腐音乐</b>
+					</span>
+				</div>
+				<li><a href="index1.html"><b>首页</b></a></li>
+				<li><a href="paihang.html"><b>排行</b></a></li>
+				<li><a href="albums.html"><b>专辑</b></a></li>
+				<li><a href="singers.html"><b>歌手</b></a></li>
+				<li><a href="usermanager.html"><b>个人中心</b></a></li>
+				<li><a href="login.html"><b>登录</b></a></li>
+				<li style="width: 200px;">
+					<div class="input-group input-group-sm">
+					  <input id="search_content" type="text" class="form-control" placeholder="搜索音乐" style="width: 120px;" aria-describedby="sizing-addon3">
+					  <button id="search" type="button" class="btn btn-default btn-xs" style="height: 30px;"><span class="glyphicon glyphicon-search"></span></button>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--首页头部结束-->
+		<!--轮播图开始-->
+		<div class="swiper-container" style="margin-left: 100px; margin-right: 100px; margin-top: 30px;border-radius: 10px; ">
+		  <div class="swiper-wrapper" >
+		    <div class="swiper-slide" style="height: 300px; background: #FFFF00;background-image: url(img/lunbo/1561261537803_.jpg);background-size: 100% 100%;"></div>
+		    <div class="swiper-slide" style="height: 300px; background: #F5E79E;background-image: url(img/lunbo/1561136268240_.jpg);background-size: 100% 100%;"></div>
+		    <div class="swiper-slide" style="height: 300px; background: #00FF00;background-image: url(img/lunbo/1561136201981_.jpg);background-size: 100% 100%;"></div>
+		  </div>
+		  <div class="swiper-button-prev"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+    	  <div class="swiper-button-next"></div><!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+		</div>
+		<!--轮播图结束-->
+		<!--推荐歌单开始-->
+		<div class="song_list_title"  style="margin-left: 100px; margin-right: 100px; margin-top: 50px;border-radius: 10px; ">
+			<div class="title" >
+				<h3 style="float: left; margin-left: 20px;">
+					<b>推荐专辑</b>
+				</h3>
+				<ul class="recommand_list">
+					<li><a href="#"><b>每日推荐</b></a></li>
+					<li><a href="#"><b>翻唱</b></a></li>
+					<li><a href="#"><b>网络</b></a></li>
+					<li><a href="#"><b>欧美</b></a></li>
+					<li><a href="#" style="margin-left: 30px; color: darkgray;">
+						<b>更多</b><span class="glyphicon glyphicon-chevron-right" ></span>
+					</a></li>
+				</ul>
+				<br />
+				<div class="song_list" style="float: left; margin-top: 20px;">
+					<div class="container" style="width: 100%;">
+					   <div class="row" id="recommand_songs">
+
+					   </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--推荐歌单结束-->
+		<!--最新活动-->
+		<div class="song_list_title"  style="margin-left: 100px; margin-right: 100px; margin-top: 50px;border-radius: 10px; ">
+			<div class="title" >
+				<h3 style="float: left; margin-left: 20px;">
+					<b>最新活动</b>
+				</h3>
+				
+				<br />
+				<div class="song_list" style="float: left; margin-top: 20px;">
+					<div class="container" style="width: 100%;">
+					   <div class="row" >
+					     
+					      <div class="col-xs-12 col-sm-6" >
+					         <div class="show_list">
+					         	<div class="pic">
+					         		<img src="img/activities/1558698167263_.jpg" style="width: 100%;"/>
+					         	</div>
+					    
+					         </div>
+					      </div>
+					      <div class="col-xs-12 col-sm-6" >
+					         <div class="show_list">
+					         	<div class="pic">
+					         		<img src="img/activities/1561355264352_.jpg" style="width: 100%;"/>
+					         	</div>
+
+					         </div>
+					      </div>
+					   </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--最新活动结束-->
+		<!--歌手展示开始-->
+		<div class="singer" style="margin-left: 100px; margin-right: 100px; margin-top: 50px;border-radius: 10px; ">
+			<div class="title" >
+				<h3 style="float: left; margin-left: 20px;">
+					<b>推荐歌手</b>
+				</h3>
+				<ul class="recommand_list">
+					<li><a href="#"><b>中国</b></a></li>
+					<li><a href="#"><b>日韩</b></a></li>
+					<li><a href="#"><b>欧美</b></a></li>
+					<li><a href="#"><b>其他</b></a></li>
+					<li><a href="#" style="margin-left: 30px; color: darkgray;">
+						<b>更多</b><span class="glyphicon glyphicon-chevron-right" ></span>
+					</a></li>
+				</ul>
+				<br />
+				<div class="singer_list" style="float: left; margin-top: 20px;">
+					<div class="container" style="width: 100%;">
+					   <div class="row" id="recommand_singers">
+					   </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--歌手展示结束-->
+		<!--排行榜开始-->
+		<!--排行榜结束-->
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index1.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: {
+		    delay: 2000,
+		    stopOnLastSlide: false,
+		    disableOnInteraction: true,
+		    },//可选选项，自动滑动
+			navigation: {
+		      nextEl: '.swiper-button-next',
+		      prevEl: '.swiper-button-prev',
+		    }
+		})
+		</script>
+	</body>
+</html>

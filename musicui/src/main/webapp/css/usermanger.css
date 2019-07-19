@@ -1,0 +1,45 @@
+/*用户展示开始*/
+.show_user{
+	width: 80%;
+	height: 600px;
+	margin:0 auto;
+	margin-top: 30px;
+	/*background: black;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.user_detail{
+	width: 80%;
+	height: 200px;
+	background: #E0E0E0;
+	border-radius: 10px;
+}
+.user_name{
+	margin-top: 10px;
+	margin-left: 10px;
+	color: black;
+	font-size: 20px;
+}
+.email{
+	margin-top: 10px;
+}
+.telephone{
+	margin-top: 10px;
+}
+.singer_detail{
+	width: 80%;
+	height: 350px;
+	/*background: red;*/
+}
+.singer_detail img{
+	width: 60px;
+}
+#shoucang td{
+	vertical-align: middle;
+}
+.btn{
+	margin-top: 15px;
+}
+/*用户展示结束*/

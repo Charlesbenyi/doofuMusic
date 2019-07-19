@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>歌曲播放页面</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/sing_detail.css"/>
+		<style type="text/css">
+			/*全局设置*/
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				min-width: 900px;
+				background: #F7F7F7;
+				
+			}
+			/*全局设置结束*/
+			/*首页的头部开始*/
+			.music-head{
+				height: 70px;
+				text-align: center;
+				border-bottom: 1px solid gainsboro;
+				min-width: 600px;
+			}
+			#pic{
+				float: left;
+				width: 150px;
+				margin-top: 20px;
+				margin-left: 10%;
+			}
+			.list_ul{
+				display: inline-block;
+			}
+			.list_ul:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.list_ul li{
+				width: 120px;
+				height: 70px;
+				display: table-cell;
+				text-align: center;
+				list-style: none;
+				vertical-align: middle;
+				
+			}
+			.list_ul li a{
+				text-decoration: none;
+			}
+			.list_ul li:hover{
+				background: lightblue;
+			}
+
+			/*首页的头部结束*/
+			/*按钮样式颜色*/
+			.active{
+				background-color: red!important;
+			}
+			/*按钮样式颜色结束*/
+		</style>
+	</head>
+	<body>
+		<!--首页头部开始-->
+		<div class="music-head">
+			
+			<ul class="list_ul" style="font-size: 20px;">
+				<div id="pic">
+					<span class="glyphicon glyphicon-music" style="font-size: 25px;"></span>
+					<span style="font-size: 20px;">
+						<b>豆腐音乐</b>
+					</span>
+				</div>
+				<li><a href="index1.html"><b>首页</b></a></li>
+				<li><a href="paihang.html"><b>排行</b></a></li>
+				<li><a href="albums.html"><b>专辑</b></a></li>
+				<li><a href="singers.html"><b>歌手</b></a></li>
+				<li><a href="usermanager.html"><b>个人中心</b></a></li>
+				<li><a href="login.html"><b>登录</b></a></li>
+				<li style="width: 200px;">
+					<div class="input-group input-group-sm">
+					  <input type="text" class="form-control" placeholder="搜索音乐" style="width: 120px;" aria-describedby="sizing-addon3">
+					  <button type="button" class="btn btn-default btn-xs" style="height: 30px;"><span class="glyphicon glyphicon-search"></span></button>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--首页头部结束-->
+		<!--歌曲展示页面-->
+		<div class="display">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-6 title">
+						<div class="picture" style="width: 60%;margin-top: 30px; background: black;">
+							<img src="" style="width: 100%;" id="img_likn"/>
+						</div>
+						<div class="zhuanji" style="width: 80%; height: 200px; margin-top: 30px; ">
+							<div id="ablum_name">
+								<span>专辑名：</span>
+							</div>
+							<div id="ablum_descript" style="margin-top: 20px; color: black;font-size: 8px;">
+								
+							</div>
+						</div>
+						<button type="button" class="btn btn-info" id="shoucang"  style="width: 150px; margin-top: 30px;">喜欢</button>
+						
+					</div>
+					<div class="col-sm-6 col-xs-6s lyric">
+						<div class="song_detail">
+							<div id="song_name">
+								<span >
+									歌曲名：
+								</span>
+							</div>
+							<div id="artist">
+								<span >
+									歌手：
+								</span>
+							</div>
+							<audio controls="controls" id="music_play" autoplay="autoplay">
+							  <!--<source id="music_play" src="https://st-sycdn.kuwo.cn/1176792be394c3e2150130e9409eb948/5d23f26b/resource/n3/48/11/1915491333.mp3" type="audio/ogg" />-->
+							  
+							Your browser does not support the audio element.
+							</audio>
+						</div>
+						<div class="song_lyric">
+							<ul id="lyric">
+								
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--展示页面结束-->
+		<!--网页页脚开始-->
+		<div class="footer">
+
+		</div>
+		<!--网页的页脚结束-->
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/sing_detail.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+/*全局设置*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #F7F7F7;
+	min-width: 800px;
+}
+/*全局设置结束*/
+/*首页的头部开始*/
+.music-head{
+	height: 70px;
+	text-align: center;
+	border-bottom: 1px solid gainsboro;
+}
+#pic{
+	float: left;
+	width: 150px;
+	margin-top: 20px;
+	margin-left: 10%;
+}
+.list_ul{
+	display: inline-block;
+}
+.list_ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.list_ul li{
+	width: 120px;
+	height: 70px;
+	display: table-cell;
+	text-align: center;
+	list-style: none;
+	vertical-align: middle;
+	
+}
+.list_ul li a{
+	text-decoration: none;
+}
+.list_ul li:hover{
+	background: lightblue;
+}
+/*首页的头部结束*/
+
+/*推荐榜单开始开始*/
+.song_list_title .title:after{
+	clear: both;
+	content: '';
+	display: block;
+}
+.song_list_title{
+	
+}
+.recommand_list{
+	margin-top: 30px;
+	margin-left: 10px;
+	float: left;
+	list-style: none;
+}
+.recommand_list li{
+	float: left;
+	margin-left: 5px;
+}
+.show_list{
+}
+/*推荐的榜单结束结束*/
+/*歌手展示开始*/
+.singer .title:after{
+	clear: both;
+	content: '';
+	display: block;
+}
+.sine{
+	
+}
+/*歌手展示结束*/
+/*最新活动开始*/
+/*最新活动结束*/

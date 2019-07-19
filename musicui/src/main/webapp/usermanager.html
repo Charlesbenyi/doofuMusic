@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户个人中心</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/usermanger.css"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				min-width: 800px;
+			}
+			/*首页的头部开始*/
+			.music-head{
+				height: 70px;
+				text-align: center;
+				border-bottom: 1px solid gainsboro;
+			}
+			#pic{
+				float: left;
+				width: 150px;
+				margin-top: 20px;
+				margin-left: 10%;
+			}
+			.list_ul{
+				display: inline-block;
+			}
+			.list_ul:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.list_ul li{
+				width: 120px;
+				height: 70px;
+				display: table-cell;
+				text-align: center;
+				list-style: none;
+				vertical-align: middle;
+				
+			}
+			.list_ul li a{
+				text-decoration: none;
+			}
+			.list_ul li:hover{
+				background: lightblue;
+			}
+			/*首页的头部结束*/
+		</style>
+	</head>
+	<body>
+		<!--首页头部开始-->
+		<div class="music-head">
+			
+			<ul class="list_ul" style="font-size: 20px;">
+				<div id="pic">
+					<span class="glyphicon glyphicon-music" style="font-size: 25px;"></span>
+					<span style="font-size: 20px;">
+						<b>豆腐音乐</b>
+					</span>
+				</div>
+				<li><a href="index1.html"><b>首页</b></a></li>
+				<li><a href="paihang.html"><b>排行</b></a></li>
+				<li><a href="albums.html"><b>专辑</b></a></li>
+				<li><a href="singers.html"><b>歌手</b></a></li>
+				<li><a href="usermanager.html"><b>个人中心</b></a></li>
+				<li><a href="login.html"><b>登录</b></a></li>
+				<li style="width: 200px;">
+					<div class="input-group input-group-sm">
+					  <input id="search_content" type="text" class="form-control" placeholder="搜索音乐" style="width: 120px;" aria-describedby="sizing-addon3">
+					  <button id="search" type="button" class="btn btn-default btn-xs" style="height: 30px;"><span class="glyphicon glyphicon-search"></span></button>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--首页头部结束-->
+
+		<div class="modal inmodal" id="myModal-editor" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content animated bounceInRight">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span>
+						</button>
+						<h6 class="modal-title">修改用户</h6><br>
+					</div>
+					<div class="modal-body">
+						<div class="input-group">
+							<span class="input-group-addon">用户名</span>
+							<input type="text" class="form-control" id="eusername">
+						</div><br>
+						<div class="input-group">
+							<span class="input-group-addon">性别</span>
+							<input type="text" class="form-control" id="esex">
+						</div><br>
+
+						<div class="input-group">
+							<span class="input-group-addon">年龄</span>
+							<input type="text" class="form-control" id="eage">
+						</div><br>
+
+						<div class="input-group">
+							<span class="input-group-addon">电话</span>
+							<input type="text" class="form-control" id="etelephone">
+						</div><br>
+						<div class="input-group">
+							<span class="input-group-addon">邮箱</span>
+							<input type="text" class="form-control" id="eemail">
+						</div><br>
+						<div class="input-group">
+							<span class="input-group-addon">密码</span>
+							<input type="password" class="form-control" id="euserpwd">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary" id="user_update">确认修改</button>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<!--用户展示-->
+		<div class="show_user">
+			<div class="user_detail">
+				<div class="user_name">
+					<span>昵称：</span><span id="username">杨家洪</span>
+				</div>
+				<div class="email">
+					<span style="margin-left: 10px;">邮箱：</span><span id="emial">4546</span>
+					<span style="margin-left: 10px;">账号：</span><span id="zhanhao">46554654</span>
+				</div>
+				<div class="telephone">
+					<span style="margin-left: 10px;">电话：</span><span id="telepone">4546</span>
+					<span style="margin-left: 10px;">性别：</span><span id="sex">46554654</span>
+					<span style="margin-left: 10px;">年龄：</span><span id="age">46554654</span>
+				</div>
+				<div class="btn">
+					<button id="loginout" type="button" class="btn btn-primary">退出</button>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-editor">修改信息</button>
+				</div>
+			</div>
+			<div class="singer_detail">
+				<table class="table table-hover">
+				    <caption>收藏歌单</caption>
+				    <thead>
+				        <tr>
+				            <th>序号</th>
+				            <th></th>
+				            <th>歌名</th>
+				            <th>专辑</th>
+				            <th>出版时间</th>
+				            <th>时间</th>
+				        </tr>
+				    </thead>
+				    <tbody id="shoucang">
+				<!--       <tr>
+				       	<td>01</td>
+				       	<td><img src="img/footer.jpg"/></td>
+				       	<td>小星星</td>
+				       	<td>杨家洪</td>
+				       	<td>7.9</td>
+				       	<td>3》40</td>
+				       </tr>-->
+				    </tbody>
+				</table>
+				<div id="pagerutil" class="fenye" style="height:30px; font-size: 15px">
+				</div>
+			</div>
+		</div>
+		<!--用户展示结束-->
+		<script src="js/jquery.min.js?v=2.1.4"></script>
+		<script src="js/bootstrap.min.js?v=3.3.6"></script>
+		<script src="js/usermanager.js"></script>
+	</body>
+</html>

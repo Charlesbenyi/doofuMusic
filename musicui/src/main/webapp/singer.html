@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>歌手详情页面</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/singer.css"/>
+		<style type="text/css">
+			/*全局设置*/
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: #F7F7F7;
+				min-width: 800px;
+			}
+			/*全局设置结束*/
+			/*首页的头部开始*/
+			.music-head{
+				height: 70px;
+				text-align: center;
+				border-bottom: 1px solid gainsboro;
+			}
+			#pic{
+				float: left;
+				width: 150px;
+				margin-top: 20px;
+				margin-left: 10%;
+			}
+			.list_ul{
+				display: inline-block;
+			}
+			.list_ul:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.list_ul li{
+				width: 120px;
+				height: 70px;
+				display: table-cell;
+				text-align: center;
+				list-style: none;
+				vertical-align: middle;
+				
+			}
+			.list_ul li a{
+				text-decoration: none;
+			}
+			.list_ul li:hover{
+				background: lightblue;
+			}
+			/*首页的头部结束*/
+		</style>
+	</head>
+	<body>
+		<!--首页头部开始-->
+		<div class="music-head">
+			
+			<ul class="list_ul" style="font-size: 20px;">
+				<div id="pic">
+					<span class="glyphicon glyphicon-music" style="font-size: 25px;"></span>
+					<span style="font-size: 20px;">
+						<b>豆腐音乐</b>
+					</span>
+				</div>
+				<li><a href="index1.html"><b>首页</b></a></li>
+				<li><a href="paihang.html"><b>排行</b></a></li>
+				<li><a href="albums.html"><b>专辑</b></a></li>
+				<li><a href="singers.html"><b>歌手</b></a></li>
+				<li><a href="usermanager.html"><b>个人中心</b></a></li>
+				<li><a href="login.html"><b>登录</b></a></li>
+				<li style="width: 200px;">
+					<div class="input-group input-group-sm">
+					  <input type="text" class="form-control" placeholder="搜索音乐" style="width: 120px;" aria-describedby="sizing-addon3">
+					  <button type="button" class="btn btn-default btn-xs" style="height: 30px;"><span class="glyphicon glyphicon-search"></span></button>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--首页头部结束-->
+		<!--歌手简介开始-->
+			<div class="singer_descript" id="singer_descriptf">
+				<div class="pic">
+					<img id="singer_img" src="" style="width: 100%;">
+				</div>
+				<div class="detail" style="color: #000; font-size: 20px;">
+					<div class="name">
+						<strong><span >歌手：</span> <span id="singername" style="margin-left: 15px;" ></span></strong>
+					</div>
+					<div class="singer_detail">
+						<div class="info1"><span>地址：</span><span id="address" ></span>
+							<span style="margin-left: 15px">星座：</span><span id="xingzuo"></span></div>
+						<div class="info2">
+							<span>语言：</span><span id="language"></span>
+							<span style="margin-left: 15px">生日：</span><span id="birthday"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--歌手简介结束-->
+		<!--歌手的歌曲开始-->
+			<div class="songs">
+				<table class="table table-hover" >
+					<thead>
+						<tr>
+							<th>序号</th>
+							<th>歌曲</th>
+							<th>专辑</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody id="content">
+						
+					</tbody>
+				</table>
+				<div id="pagerutil" style="text-align: center; font-size: 15px"></div>
+			</div>
+		<!--歌手的歌曲结束-->
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/singer.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

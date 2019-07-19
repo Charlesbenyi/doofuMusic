@@ -1,0 +1,54 @@
+/*歌手详情页面介绍*/
+.singer_descript{
+	width: 80%;
+	height: 300px;
+	/*background: black;*/
+	margin: 0 auto;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.singer_descript .pic{
+	width: 200px;
+	height: 200px;
+	/*background: red;*/
+}
+.singer_descript .detail{
+	width: 400px;
+	height: 200px;
+	/*background: red;*/
+	margin-left: 80px;
+}
+/*歌手详情页面结束*/
+
+/*歌手的歌曲开始*/
+.songs{
+	width: 80%;
+	height: 600px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+#content tr:hover{
+	background: skyblue;
+}
+.info1{
+	margin-top: 10px;
+}
+.info2{
+	margin-top: 10px;
+}
+
+/*.info2 span{
+	margin-left: 10px;
+}*/
+.name{
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 20px;
+	color: black;
+}
+.song_num span{
+	margin-left: 10px;
+}
+/*歌手的歌曲结束*/

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{margin: 0;padding: 0;list-style: none;}
+    body{
+        background: url('http://p.store.itangyuan.com/p/book/cover/e_EvEgjSeS/EgfvEgfweBbUeBIwEBMWeGugK6HN7tm6ff.jpg') ;
+        background-size: 100%;
+    }
+    .main{
+        width: 30%;
+        height:40%;
+        position: absolute;
+        left: 35%;
+        top: 15%;
+    }
+    .main .registe{
+        width: 400px;
+        height: 650px;
+        background-color:rgba(255,255,255,0.75);
+        margin: 50px 90px;
+    }
+    .headline{
+        font-size: 25px;
+        text-align: center;
+        padding: 22px;
+    }
+    input[type="password"],
+    input[type="text"],
+    input[type="submit"]{
+        -web-kit-appearance:none;
+        -moz-appearance: none;
+        display: block;
+        margin: 0 auto;
+        font-size:17px;
+        width: 240px;
+    }
+    input[type="password"]{
+        height:30px;
+        border-radius:3px;
+        border:1px solid #c8cccf;
+        color:#6a6f77;
+        outline:0;
+    }
+    input[type="text"]{
+        height:30px;
+        border-radius:3px;
+        border:1px solid #c8cccf;
+        color:#6a6f77;
+        outline:0;
+    }
+    input[type="submit"]{
+        margin-top: 25px;
+        height: 35px;
+        background: #357eb8;
+        color: #bcedff;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover{
+        background: #0e62a3;
+        cursor: pointer;
+    }
+    .astyle{
+        margin: 5px 0 5px 42px;
+        font-size:17px;
+        color: #6a6f77;
+    }
+</style>
+<script src="js/jquery.min.js?v=2.1.4" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+<body>
+<div class="main">
+    <div class="registe">
+            <p class="headline">帐号注册:</p>
+            <p class="astyle">账号:</p>
+            <input type="text" name="accounts" id="accounts" value="">
+            <p class="astyle">密码:</p>
+            <input type="password" name="userpwd" id="userpwd" value="">
+            <p class="astyle">用户名: </p>
+            <input type="text" name="username"  id="username" value="">
+            <p class="astyle">年龄: </p>
+            <input type="text" name="age" value="" id="age">
+            <p class="astyle">性别: </p>
+            <input type="text" name="sex" value="" id="sex">
+            <p class="astyle">电话: </p>
+            <input type="text" name="telephone" value="" id="telephone">
+            <p class="astyle">邮箱: </p>
+            <input type="text" name="email" value="" id="email">
+            <input type="submit" onclick="register()" value="注册"><br>
+         <div class="change" style="color: #4d4d4d">
+              <p class="cstyl">已有账号？<a href="login.html">立即登录</a></p>
+          </div>
+    </div>
+</div>
+</body>
+</html>

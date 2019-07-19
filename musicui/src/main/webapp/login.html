@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{margin: 0;padding: 0;list-style: none;}
+    body{
+        background: url('http://p.store.itangyuan.com/p/book/cover/e_EvEgjSeS/EgfvEgfweBbUeBIwEBMWeGugK6HN7tm6ff.jpg') ;
+        background-size: 100%;
+    }
+    /* 主题内容 */
+    .main{
+        width:1200px;
+        height: 450px;
+    }
+    .sideright{
+        width: 480px;
+        height: 450px;
+        position: absolute;
+        left: 62%;
+        top: 23%;
+    }
+    .sideright .index{
+        width: 400px;
+        height: 500px;
+        background-color:rgba(255,255,255,0.75);
+        margin: 50px 90px;
+    }
+    .headline{
+        font-size: 25px;
+        text-align: center;
+        padding: 22px;
+    }
+    input[type="password"],
+    input[type="text"],
+    input[type="submit"]{
+        -web-kit-appearance:none;
+        -moz-appearance: none;
+        display: block;
+        margin: 0 auto;
+        font-size:17px;
+        width: 240px;
+    }
+    input[type="password"]{
+        height:30px;
+        border-radius:3px;
+        border:1px solid #c8cccf;
+        color:#6a6f77;
+        outline:0;
+    }
+    input[type="text"]{
+        height:35px;
+        border-radius:3px;
+        border:1px solid #c8cccf;
+        color:#6a6f77;
+        outline:0;
+    }
+    input[type="submit"]{
+        margin-top: 25px;
+        height: 35px;
+        background: #357eb8;
+        color: #bcedff;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover{
+        background: #0e62a3;
+        cursor: pointer;
+    }
+    .astyle{
+        margin: 5px 0 5px 42px;
+        font-size:17px;
+        color: #6a6f77;
+    }
+    .bstyle{
+        display: block;
+        float: left;
+        margin-left: 46px;
+        font-size: 15px;
+    }
+    .cstyle{
+        display: block;
+        float: right;
+        margin-right: 46px;
+        font-size: 15px;
+    }
+    .cstyle a{
+        text-decoration: none;
+    }
+</style>
+    <script src="js/jquery.min.js?v=2.1.4" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+<body>
+<!-- 右侧登陆界面 -->
+<div class="sideright">
+    <div class="index">
+            <p class="headline">用户登陆</p>
+            <p class="astyle">账号：</p><br>
+            <input type="text" name="accounts" id="accounts" value="">
+            <p class="astyle">密码：</p><br>
+            <input type="password" name="password" id="userpwd" value="">
+            <input type="submit" onclick="login()" value="登陆" name="login" ><br><br>
+            <p class="bstyle"><input type="checkbox" name="rempas" />记住密码</p>
+            <p class="cstyle">忘记密码</p><br><br>
+            <p class="cstyle">没有账号？<a href="registe.html">立即注册</a></p>
+            <p class="cstyle">管理员？<a href="adminlogin.html">点击后台登录</a></p>
+    </div>
+</div>
+</body>
+</html>
